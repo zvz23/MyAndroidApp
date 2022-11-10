@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyAndroidApp.Profile"
+             Title="Profile">
+    <ScrollView>
+        <StackLayout>
+            <StackLayout>
+                <Frame HeightRequest="220" CornerRadius="0" BackgroundColor="MediumPurple">
+                </Frame>
+                <AbsoluteLayout>
+                    <Frame AbsoluteLayout.LayoutBounds="200,-30,0,0" CornerRadius="100" HeightRequest="200" WidthRequest="200" BackgroundColor="AliceBlue">
+                        <Image Source="profile.png" Aspect="AspectFill" />
+                    </Frame>
+                </AbsoluteLayout>
+                <StackLayout Margin="0,80,0,0">
+                    <Label Text="John Smith" FontSize="Large" HorizontalOptions="Center" />
+                </StackLayout>
+                <StackLayout Margin="10,30,0,0">
+                    <Label Text="Your posts (10)" FontSize="Medium"/>
+                    <StackLayout x:Name="ImageContainer">
+                        <StackLayout HeightRequest="220" Margin="0,10,0,10" Padding="15">
+                            <Image HeightRequest="220" Source="kiyafvvt.jpg"/>
+                        </StackLayout>
+                        <StackLayout HeightRequest="220"  Margin="0,10,0,10" Padding="15">
+                            <Image HeightRequest="220" Source="pljjgxmd.jpg"/>
+                        </StackLayout>
+                        <StackLayout HeightRequest="220"  Margin="0,10,0,10" Padding="15">
+                            <Image HeightRequest="220" Source="qqpmeuaj.jpg"/>
+                        </StackLayout>
+                        <StackLayout HeightRequest="220"  Margin="0,10,0,10" Padding="15">
+                            <Image HeightRequest="220" Source="wrqmzgqp.jpg"/>
+                        </StackLayout>
+                        <StackLayout HeightRequest="220"  Margin="0,10,0,10" Padding="15">
+                            <Image HeightRequest="220" Source="zkcovstn.jpg"/>
+                        </StackLayout>
+                        <StackLayout HeightRequest="220"  Margin="0,10,0,10" Padding="15">
+                            <Image HeightRequest="220" Source="yoqmbntr.jpg"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

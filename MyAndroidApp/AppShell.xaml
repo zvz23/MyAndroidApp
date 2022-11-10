@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MyAndroidApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MyAndroidApp"
+    Shell.FlyoutBehavior="Flyout">
+
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid 
+                HeightRequest="150"
+                BackgroundColor="MediumPurple"
+                  >
+                <Label Text="Hello John Smith!" TextColor="White" FontAttributes="Bold" FontSize="20" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+    <FlyoutItem Title="Home"
+                Icon="home.png">
+        <Tab>
+            <ShellContent Title="Home" ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Profile"
+                Icon="profile.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:Profile}" />
+        </Tab>
+        
+    </FlyoutItem>
+    <FlyoutItem Title="Logout"
+                Icon="logout.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:Logout}" />
+
+        </Tab>
+        
+    </FlyoutItem>
+
+
+    <TabBar>
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Icon="icon_notes" />
+
+        <ShellContent
+            Title="Profile"
+            ContentTemplate="{DataTemplate local:Login}"
+            Icon="icon_notes" />
+
+
+    </TabBar>
+</Shell>
