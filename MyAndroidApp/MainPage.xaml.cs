@@ -1,11 +1,38 @@
-﻿namespace MyAndroidApp;
+﻿using MyAndroidApp.Models;
+using System.Collections.ObjectModel;
+
+namespace MyAndroidApp;
 
 public partial class MainPage : ContentPage
 {
-
-	public MainPage()
+    public ObservableCollection<Post> LatestPosts { get; set; } = new ObservableCollection<Post>();
+    public MainPage()
 	{
 		InitializeComponent();
+        LatestPosts.Add(new Post()
+        {
+            Author = "John Smith",
+            Image = "kiyafvvt.jpg"
+
+        });
+        LatestPosts.Add(new Post()
+        {
+            Author = "Ziegfred Zorrilla",
+            Image = "pljjgxmd.jpg"
+
+        });
+        LatestPosts.Add(new Post()
+        {
+            Author = "Jane Doe",
+            Image = "qqpmeuaj.jpg"
+
+        });
+        LatestPosts.Add(new Post()
+        {
+            Author = "Will Smith",
+            Image = "wrqmzgqp.jpg"
+
+        });
 
     }
 

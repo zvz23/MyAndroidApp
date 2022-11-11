@@ -6,4 +6,9 @@ public partial class Profile : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	async void EditProfileButtonClicked(object sender, EventArgs e)
+	{
+		await Shell.Current.GoToAsync("//EditProfile");
+	}
 }

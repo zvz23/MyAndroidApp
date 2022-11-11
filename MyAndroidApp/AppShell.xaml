@@ -20,15 +20,22 @@
     <FlyoutItem Title="Home"
                 Icon="home.png">
         <Tab>
-            <ShellContent Title="Home" ContentTemplate="{DataTemplate local:MainPage}" />
+            <ShellContent Route="Home" ContentTemplate="{DataTemplate local:Profile}" />
         </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="Profile"
-                Icon="profile.png">
+    <FlyoutItem Title="Gallery"
+                Icon="gallerystacked.png">
         <Tab>
-            <ShellContent ContentTemplate="{DataTemplate local:Profile}" />
+            <ShellContent Route="Gallery" ContentTemplate="{DataTemplate local:MainPage}" />
         </Tab>
         
+    </FlyoutItem>
+    <FlyoutItem FlyoutItemIsVisible="False" Title="Edit Profile"
+                Icon="profile.png">
+        <Tab>
+            <ShellContent Route="EditProfile" ContentTemplate="{DataTemplate local:EditProfile}" />
+        </Tab>
+
     </FlyoutItem>
     <FlyoutItem Title="Logout"
                 Icon="logout.png">
@@ -40,17 +47,4 @@
     </FlyoutItem>
 
 
-    <TabBar>
-        <ShellContent
-            Title="Home"
-            ContentTemplate="{DataTemplate local:MainPage}"
-            Icon="icon_notes" />
-
-        <ShellContent
-            Title="Profile"
-            ContentTemplate="{DataTemplate local:Login}"
-            Icon="icon_notes" />
-
-
-    </TabBar>
 </Shell>
