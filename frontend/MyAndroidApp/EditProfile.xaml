@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyAndroidApp.EditProfile"
+             Title="Edit Profile">
+    <VerticalStackLayout Spacing="10">
+        <Frame  BackgroundColor="Transparent" BorderColor="Transparent" Margin="0,50,0,0">
+            <VerticalStackLayout>
+                <Label Text="Edit profile" Margin="0,0,0,20"  FontAttributes="Bold" HorizontalTextAlignment="Center" FontSize="32"></Label>
+                <Label Text="FIRST NAME"  FontAttributes="Bold" FontSize="Small"></Label>
+                <Entry  Keyboard="Text" Margin="0,0,0,10" Text="John" ClearButtonVisibility="WhileEditing" />
+                <Label Text="LAST NAME"  FontAttributes="Bold" FontSize="Small"></Label>
+                <Entry  Keyboard="Text" Text="Smith" Margin="0,0,0,10" ClearButtonVisibility="WhileEditing"></Entry>
+                <Label Text="EMAIL"  FontAttributes="Bold" FontSize="Small"></Label>
+                <Entry  Keyboard="Email" Text="john.smith@gmail.com" Margin="0,0,0,10" ClearButtonVisibility="WhileEditing"></Entry>
+                <Label Text="GENDER"  FontAttributes="Bold" FontSize="Small"></Label>
+
+                <Picker x:Name="picker"
+        Title="Select a gender" SelectedIndex="0">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Male</x:String>
+                            <x:String>Female</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Button Text="Save" Clicked="SaveProfileButtonClicked"  BackgroundColor="Blue" CornerRadius="20" Margin="0,15,0,0"></Button>
+            </VerticalStackLayout>
+        </Frame>
+
+    </VerticalStackLayout>
+</ContentPage>
