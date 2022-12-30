@@ -27,7 +27,7 @@ public class ImageFileDataService {
     @Autowired
     private AppUserService userService;
 
-    private final String FOLDER_PATH = "C:\\Users\\ASUS\\Desktop\\backend\\pictures\\";
+    private final String FOLDER_PATH = "/home/ubuntu/MyAndroidApp/backend/pictures";
 
     public String uploadImageToFileSystem(MultipartFile image, Long ownerId) {
 
@@ -56,7 +56,7 @@ public class ImageFileDataService {
                         .type(image.getContentType())
                         .filePath(filePath)
                         .userOwner(ownerId) // owner id should be the id of the user account
-                        .viewImage("http://localhost:8080/api/image/view?imageName=".concat(imageFileName))
+                        .viewImage("http://13.215.47.77:8080/api/image/view?imageName=".concat(imageFileName))
                         .build());
 
                 // if image path is null then its not successful
