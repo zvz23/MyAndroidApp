@@ -67,7 +67,7 @@ public class ImageFileDataController {
                 .body(delete);
     }
 
-    @GetMapping("/list")
+    @GetMapping("/list/all")
     public ResponseEntity<?> AllImageData() {
 
         List<ImageFileData> data = service.AllOfImageFileData();
