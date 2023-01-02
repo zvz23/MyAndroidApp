@@ -14,9 +14,9 @@
 
 
             
-            <ScrollView Margin="0,10,0,0" VerticalScrollBarVisibility="Always" HeightRequest="650">
-                <StackLayout>
-                    <StackLayout HeightRequest="220" Margin="0,0,0,10" Padding="0">
+            <ScrollView Margin="0,30,0,0" VerticalScrollBarVisibility="Always" HeightRequest="650">
+                <StackLayout x:Name="PostContainer">
+                    <!--<StackLayout HeightRequest="220" Margin="0,0,0,10" Padding="0">
                         <Image HeightRequest="220" Source="kiyafvvt.jpg"/>
                     </StackLayout>
                     <StackLayout HeightRequest="220" Margin="0,0,0,10" Padding="0">
@@ -27,7 +27,7 @@
                     </StackLayout>
                     <StackLayout HeightRequest="220" Margin="0,0,0,10" Padding="0">
                         <Image HeightRequest="220" Source="wrqmzgqp.jpg"/>
-                    </StackLayout>
+                    </StackLayout>-->
                 </StackLayout>
             </ScrollView>
 

@@ -12,7 +12,7 @@
                 HeightRequest="150"
                 BackgroundColor="MediumPurple"
                   >
-                <Label Text="Hello John Smith!" TextColor="White" FontAttributes="Bold" FontSize="20" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                <Label x:Name="WelcomeLabel" TextColor="White" FontAttributes="Bold" FontSize="20" VerticalOptions="Center" HorizontalOptions="Center"></Label>
 
             </Grid>
         </DataTemplate>

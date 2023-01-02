@@ -9,14 +9,14 @@
             <VerticalStackLayout>
                 <Label Text="Create an account" Margin="0,0,0,20" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" FontSize="32"></Label>
                 <Label Text="FIRST NAME" TextColor="White" FontAttributes="Bold" FontSize="Small"></Label>
-                 <Entry TextColor="White" Margin="0,0,0,10" Keyboard="Text" ClearButtonVisibility="WhileEditing" />
+                 <Entry x:Name="FirstName" TextColor="White" Margin="0,0,0,10" Keyboard="Text" ClearButtonVisibility="WhileEditing" />
                 <Label Text="LAST NAME" TextColor="White" FontAttributes="Bold" FontSize="Small"></Label>
-                <Entry TextColor="White" Margin="0,0,0,10" Keyboard="Text" ClearButtonVisibility="WhileEditing"></Entry>
+                <Entry x:Name="LastName" TextColor="White" Margin="0,0,0,10" Keyboard="Text" ClearButtonVisibility="WhileEditing"></Entry>
                 <Label Text="EMAIL" TextColor="White" FontAttributes="Bold" FontSize="Small"></Label>
-                <Entry TextColor="White" Margin="0,0,0,10" Keyboard="Email" ClearButtonVisibility="WhileEditing"></Entry>
+                <Entry x:Name="Email" TextColor="White" Margin="0,0,0,10" Keyboard="Email" ClearButtonVisibility="WhileEditing"></Entry>
                 <Label Text="GENDER"  FontAttributes="Bold" TextColor="White" FontSize="Small"></Label>
 
-                <Picker TextColor="White" Margin="0,0,0,10" x:Name="picker"
+                <Picker TextColor="White" Margin="0,0,0,10" x:Name="Gender"
         Title="Select a gender">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
@@ -26,9 +26,9 @@
                     </Picker.ItemsSource>
                 </Picker>
                 <Label Text="PASSWORD" TextColor="White" FontAttributes="Bold" FontSize="Small"></Label>
-                <Entry TextColor="White" Margin="0,0,0,10" IsPassword="True" ClearButtonVisibility="WhileEditing"></Entry>
+                <Entry x:Name="Password" TextColor="White" Margin="0,0,0,10" IsPassword="True" ClearButtonVisibility="WhileEditing"></Entry>
                 <Label Text="CONFIRM PASSWORD" TextColor="White" FontAttributes="Bold" FontSize="Small"></Label>
-                <Entry TextColor="White" Margin="0,0,0,10" IsPassword="True" ClearButtonVisibility="WhileEditing"></Entry>
+                <Entry x:Name="PasswordConfirm" TextColor="White" Margin="0,0,0,10" IsPassword="True" ClearButtonVisibility="WhileEditing"></Entry>
 
                 <Button Text="Create account" Clicked="CreateAccountButtonClicked"  BackgroundColor="Blue" CornerRadius="20" Margin="0,15,0,0"></Button>
                 <Button Text="Already have an account? Login here" Clicked="LoginPageButtonClicked" Padding="0" BackgroundColor="Transparent" />
