@@ -68,9 +68,9 @@ public class ImageFileDataController {
     }
 
     @GetMapping("/list")
-    public ResponseEntity<?> listOfImageData() {
+    public ResponseEntity<?> AllImageData() {
 
-        List<ImageFileData> data = service.listOfImageFileData();
+        List<ImageFileData> data = service.AllOfImageFileData();
 
         return ResponseEntity.status(HttpStatus.OK)
                 .body(data);

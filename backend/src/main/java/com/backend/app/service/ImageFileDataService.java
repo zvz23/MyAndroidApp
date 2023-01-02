@@ -148,7 +148,7 @@ public class ImageFileDataService {
         
     }
 
-    public List<ImageFileData> listOfImageFileData() {
+    public List<ImageFileData> AllOfImageFileData() {
 
         // pass a list of image file data 
         return repository.findAll();
