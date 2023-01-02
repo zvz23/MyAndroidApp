@@ -27,7 +27,7 @@ public class ImageFileDataService {
     @Autowired
     private AppUserService userService;
 
-    private final String FOLDER_PATH = "/home/ubuntu/MyAndroidApp/backend/pictures";
+    private final String FOLDER_PATH = "/home/ubuntu/MyAndroidApp/backend/pictures/";
 
     public String uploadImageToFileSystem(MultipartFile image, Long ownerId) {
 
