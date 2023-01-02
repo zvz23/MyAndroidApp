@@ -148,6 +148,13 @@ public class ImageFileDataService {
         
     }
 
+    public List<ImageFileData> listOfImageFileData() {
+
+        // pass a list of image file data 
+        return repository.findAll();
+
+    }
+
     public Optional<List<ImageFileData>> listOfImageFileData(Long ownerId) { // param is for testing only
 
         // pass a list of image file data sort by owner id 

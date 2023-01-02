@@ -67,7 +67,17 @@ public class ImageFileDataController {
                 .body(delete);
     }
 
-    @GetMapping("/list") // it should be no parameter.
+    @GetMapping("/list")
+    public ResponseEntity<?> listOfImageData() {
+
+        List<ImageFileData> data = service.listOfImageFileData();
+
+        return ResponseEntity.status(HttpStatus.OK)
+                .body(data);
+
+    }
+
+    @GetMapping("/list")
     public ResponseEntity<?> listOfImageData(@RequestParam("ownerId") Long ownerId) {
 
         Optional<List<ImageFileData>> data = service.listOfImageFileData(ownerId);
